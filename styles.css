@@ -1,0 +1,32 @@
+body {
+    font font-family: sans-serif;
+    text align: center;
+    padding: 30px;
+    background color: #f0f0f0;
+}
+#game {
+    margin-top: 20px;
+}
+.number-button {
+    margin: 10px;
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: turquoise;
+    color: white;
+    transition: background-color 0,2s;;
+}
+.number-button:hover {
+    background-color: aquamarine;
+}
+#message {
+    font-weight: bold;
+    margin-top:20px;
+    font-size: 24px;
+}
+#target-number {
+font-size: 22px;
+margin-bottom: 15px;
+}
