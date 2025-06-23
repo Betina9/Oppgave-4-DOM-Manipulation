@@ -19,5 +19,15 @@ while (numbers.length < 5) {
         numbers.push(num);
     }
 }
-
+//Velger et tilfeldig mål-tall fra listen
+currentTarget = numbers[Math.floor(Math.random() * numbers.length)];
+targetDisplay.textContent = 'Finn tallet: ${currentTarget}';
+//Lager knapper
+numbers.forEach(number => {
+    const btn = document.createElement("button");
+    btn.textContent = number;
+    btn.className = "number-button";
+    btn.addEventListener("click", () => checkAnswer(number));
+    gameContainer.appendChild(btn);
+});
 }
